@@ -1,0 +1,15 @@
+baseurl: ""
+
+title: "Way Fwd Fitness"
+url: wayfwdfitness.com
+image: "https://images.pexels.com/photos/34587/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      author: "Joe Howard"
+      cover: "https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      type: "Blog"
