@@ -191,7 +191,7 @@ fields:
     - type: text
       name: Title
       label: Title
-    - type: text
+    - type: textarea
       name: Text
       label: Text
     - type: text
