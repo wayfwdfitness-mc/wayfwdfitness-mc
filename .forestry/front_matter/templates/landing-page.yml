@@ -234,3 +234,5 @@ fields:
       label: Booking Link
   description: <a href="https://www.loom.com/i/e57fa2ca63934ae1af2e79a58c7b75c4" target="_blank">Footer
     Section Screenshot</a>
+pages:
+- index.html
