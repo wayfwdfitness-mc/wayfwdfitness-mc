@@ -1,0 +1,217 @@
+---
+label: Landing Page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: field_group
+  name: navBar
+  label: navBar
+  fields:
+  - type: text
+    name: Link1
+    label: Link1
+  - type: text
+    name: Link2
+    label: Link2
+  - type: text
+    name: Link3
+    label: Link3
+  - type: text
+    name: Link4
+    label: Link4
+  - type: textarea
+    name: ButtonLink
+    label: ButtonLink
+- type: field_group
+  name: banner
+  label: banner
+  fields:
+  - type: text
+    name: Title
+    label: Title
+  - type: textarea
+    name: Subtitle
+    label: Subtitle
+  - type: text
+    name: ButtonText
+    label: ButtonText
+- type: field_group
+  name: testimonialA
+  label: testimonialA
+  fields:
+  - type: text
+    name: Author
+    label: Author
+  - type: textarea
+    name: Text
+    label: Text
+- type: field_group
+  name: trainingProgramDetails
+  label: trainingProgramDetails
+  fields:
+  - type: text
+    name: Title
+    label: Title
+  - type: field_group
+    name: sectionA
+    label: sectionA
+    fields:
+    - type: text
+      name: Subtitle
+      label: Subtitle
+    - type: textarea
+      name: Text
+      label: Text
+  - type: field_group
+    name: sectionB
+    label: sectionB
+    fields:
+    - type: text
+      name: Subtitle
+      label: Subtitle
+    - type: textarea
+      name: Text
+      label: Text
+  - type: field_group
+    name: sectionC
+    label: sectionC
+    fields:
+    - type: text
+      name: Subtitle
+      label: Subtitle
+    - type: textarea
+      name: Text
+      label: Text
+- type: field_group
+  name: freeOffer
+  label: freeOffer
+  fields:
+  - type: text
+    name: Title
+    label: Title
+  - type: textarea
+    name: Text
+    label: Text
+  - type: text
+    name: ButtonText
+    label: ButtonText
+  - type: textarea
+    name: ButtonLink
+    label: ButtonLink
+- type: field_group
+  name: testimonialSection
+  label: testimonialSection
+  fields:
+  - type: field_group
+    name: testimonialA
+    label: testimonialA
+    fields:
+    - type: text
+      name: Author
+      label: Author
+    - type: textarea
+      name: Picture
+      label: Picture
+    - type: textarea
+      name: Text
+      label: Text
+  - type: field_group
+    name: testimonialB
+    label: testimonialB
+    fields:
+    - type: text
+      name: Author
+      label: Author
+    - type: textarea
+      name: Picture
+      label: Picture
+    - type: textarea
+      name: Text
+      label: Text
+  - type: field_group
+    name: testimonialC
+    label: testimonialC
+    fields:
+    - type: text
+      name: Author
+      label: Author
+    - type: textarea
+      name: Picture
+      label: Picture
+    - type: textarea
+      name: Text
+      label: Text
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
+- type: field_group
+  name: testimonialB
+  label: testimonialB
+  fields:
+  - type: text
+    name: Author
+    label: Author
+  - type: textarea
+    name: Text
+    label: Text
+- type: field_group
+  name: footer
+  label: footer
+  fields:
+  - type: field_group
+    name: hoursOfOperation
+    label: hoursOfOperation
+    fields:
+    - type: text
+      name: Title
+      label: Title
+    - type: text
+      name: Text
+      label: Text
+    - type: text
+      name: ButtonText
+      label: ButtonText
+    - type: number
+      name: PhoneNumber
+      label: PhoneNumber
+  - type: field_group
+    name: directions
+    label: directions
+    fields:
+    - type: text
+      name: Title
+      label: Title
+    - type: text
+      name: Text
+      label: Text
+    - type: text
+      name: ButtonText
+      label: ButtonText
+    - type: textarea
+      name: MapLink
+      label: MapLink
+  - type: field_group
+    name: appointment
+    label: appointment
+    fields:
+    - type: text
+      name: Title
+      label: Title
+    - type: textarea
+      name: Text
+      label: Text
+    - type: text
+      name: ButtonText
+      label: ButtonText
+    - type: textarea
+      name: BookingLink
+      label: BookingLink
