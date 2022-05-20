@@ -122,7 +122,7 @@ fields:
     - type: text
       name: Author
       label: Author
-    - type: textarea
+    - type: file
       name: Picture
       label: Picture
     - type: textarea
@@ -135,7 +135,7 @@ fields:
     - type: text
       name: Author
       label: Author
-    - type: textarea
+    - type: file
       name: Picture
       label: Picture
     - type: textarea
@@ -148,7 +148,7 @@ fields:
     - type: text
       name: Author
       label: Author
-    - type: textarea
+    - type: file
       name: Picture
       label: Picture
     - type: textarea
