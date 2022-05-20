@@ -8,7 +8,7 @@ fields:
   hidden: true
 - type: field_group
   name: navBar
-  label: Navigation/Menu Bar
+  label: "\U0001F9ED Navigation/Menu Bar"
   fields:
   - type: text
     name: Link1
@@ -44,7 +44,7 @@ fields:
     target="_blank">Banner Section Screenshot</a>
 - type: field_group
   name: testimonialA
-  label: Testimonial A Section
+  label: "\U0001F31F Testimonial A Section"
   fields:
   - type: text
     name: Author
@@ -56,7 +56,7 @@ fields:
     target="_blank">Testimonial A Section Screenshot</a>
 - type: field_group
   name: trainingProgramDetails
-  label: Training Program Details
+  label: "\U0001F4AA Training Program Details"
   fields:
   - type: text
     name: Title
@@ -95,7 +95,7 @@ fields:
     target="_blank">Training Program Details Screenshot</a>
 - type: field_group
   name: freeOffer
-  label: Free Offer Section
+  label: "\U0001F193 Free Offer Section"
   fields:
   - type: text
     name: Title
@@ -113,7 +113,7 @@ fields:
     target="_blank">Free Offer Section Screenshot</a>
 - type: field_group
   name: testimonialSection
-  label: Testimonial Section
+  label: "\U0001F31F Testimonial Section"
   fields:
   - type: field_group
     name: testimonialA
@@ -170,7 +170,7 @@ fields:
     target="_blank">About Section Screenshot</a>
 - type: field_group
   name: testimonialB
-  label: Testimonial B Section
+  label: "\U0001F31F Testimonial B Section"
   fields:
   - type: text
     name: Author
