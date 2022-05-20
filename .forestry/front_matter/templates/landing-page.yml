@@ -1,13 +1,14 @@
 ---
 label: Landing Page
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: field_group
   name: navBar
-  label: navBar
+  label: Navigation/Menu Bar
   fields:
   - type: text
     name: Link1
@@ -24,9 +25,11 @@ fields:
   - type: textarea
     name: ButtonLink
     label: ButtonLink
+  description: <a href="https://www.loom.com/i/54fd593a77c547a19dfc9da6ccc93469" title=""
+    target="_blank">Navigation/Menu Bar</a>
 - type: field_group
   name: banner
-  label: banner
+  label: Banner Section
   fields:
   - type: text
     name: Title
@@ -37,9 +40,11 @@ fields:
   - type: text
     name: ButtonText
     label: ButtonText
+  description: <a href="https://www.loom.com/i/0415789b7de54258be261cd273fb67c5" title=""
+    target="_blank">Banner Section Screenshot</a>
 - type: field_group
   name: testimonialA
-  label: testimonialA
+  label: Testimonial A Section
   fields:
   - type: text
     name: Author
@@ -47,16 +52,18 @@ fields:
   - type: textarea
     name: Text
     label: Text
+  description: <a href="https://www.loom.com/i/d36bc70c066045feb7434dcfede0158a" title=""
+    target="_blank">Testimonial A Section</a>
 - type: field_group
   name: trainingProgramDetails
-  label: trainingProgramDetails
+  label: Training Program Details
   fields:
   - type: text
     name: Title
     label: Title
   - type: field_group
     name: sectionA
-    label: sectionA
+    label: Section A
     fields:
     - type: text
       name: Subtitle
@@ -66,7 +73,7 @@ fields:
       label: Text
   - type: field_group
     name: sectionB
-    label: sectionB
+    label: Section B
     fields:
     - type: text
       name: Subtitle
@@ -76,7 +83,7 @@ fields:
       label: Text
   - type: field_group
     name: sectionC
-    label: sectionC
+    label: Section C
     fields:
     - type: text
       name: Subtitle
@@ -84,9 +91,11 @@ fields:
     - type: textarea
       name: Text
       label: Text
+  description: <a href="https://www.loom.com/i/8ba14c88320c49bc97466f5bb9bd23eb" title=""
+    target="_blank">Free Offer Section</a>
 - type: field_group
   name: freeOffer
-  label: freeOffer
+  label: Free Offer Section
   fields:
   - type: text
     name: Title
@@ -96,17 +105,19 @@ fields:
     label: Text
   - type: text
     name: ButtonText
-    label: ButtonText
+    label: Button Text
   - type: textarea
     name: ButtonLink
-    label: ButtonLink
+    label: Button Link
+  description: <a href="https://www.loom.com/i/8ba14c88320c49bc97466f5bb9bd23eb" title=""
+    target="_blank">Free Offer Section</a>
 - type: field_group
   name: testimonialSection
-  label: testimonialSection
+  label: Testimonial Section
   fields:
   - type: field_group
     name: testimonialA
-    label: testimonialA
+    label: Testimonial A Subsection
     fields:
     - type: text
       name: Author
@@ -119,7 +130,7 @@ fields:
       label: Text
   - type: field_group
     name: testimonialB
-    label: testimonialB
+    label: Testimonial B Subsection
     fields:
     - type: text
       name: Author
@@ -132,7 +143,7 @@ fields:
       label: Text
   - type: field_group
     name: testimonialC
-    label: testimonialC
+    label: Testimonial C Subsection
     fields:
     - type: text
       name: Author
@@ -143,19 +154,23 @@ fields:
     - type: textarea
       name: Text
       label: Text
+  description: <a href="https://www.loom.com/i/91ae35c77cca4be29a321e005f55a489" title=""
+    target="_blank">Testimonial Section Screenshot</a>
 - type: field_group
   name: about
-  label: about
+  label: About Section
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
   - type: textarea
     name: text
-    label: text
+    label: Text
+  description: <a href="https://www.loom.com/i/80467747b55e40bf9de675c336fbe473" title=""
+    target="_blank">About Section</a>
 - type: field_group
   name: testimonialB
-  label: testimonialB
+  label: Testimonial B Section
   fields:
   - type: text
     name: Author
@@ -163,13 +178,15 @@ fields:
   - type: textarea
     name: Text
     label: Text
+  description: <a href="https://www.loom.com/i/519280175fed4a4cba4abad589169bb9" title=""
+    target="_blank">Testimonial B Section</a>
 - type: field_group
   name: footer
-  label: footer
+  label: Footer Section
   fields:
   - type: field_group
     name: hoursOfOperation
-    label: hoursOfOperation
+    label: Hours of Operation
     fields:
     - type: text
       name: Title
@@ -179,13 +196,13 @@ fields:
       label: Text
     - type: text
       name: ButtonText
-      label: ButtonText
+      label: Button Text
     - type: number
       name: PhoneNumber
-      label: PhoneNumber
+      label: Phone Number
   - type: field_group
     name: directions
-    label: directions
+    label: Directions
     fields:
     - type: text
       name: Title
@@ -195,13 +212,13 @@ fields:
       label: Text
     - type: text
       name: ButtonText
-      label: ButtonText
+      label: Button Text
     - type: textarea
       name: MapLink
-      label: MapLink
+      label: Map Link
   - type: field_group
     name: appointment
-    label: appointment
+    label: Appointment
     fields:
     - type: text
       name: Title
@@ -211,7 +228,9 @@ fields:
       label: Text
     - type: text
       name: ButtonText
-      label: ButtonText
+      label: Button Text
     - type: textarea
       name: BookingLink
-      label: BookingLink
+      label: Booking Link
+  description: <a href="https://www.loom.com/i/e57fa2ca63934ae1af2e79a58c7b75c4" target="_blank">Footer
+    Section Screenshot</a>
