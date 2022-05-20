@@ -5,9 +5,9 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: field_group
   name: navBar
-  label: navBar
   fields:
   - type: text
     name: navBarLink1
@@ -21,6 +21,9 @@ fields:
   - type: text
     name: navBarLink4
     label: navBarLink4
+  label: Navigation/Menu Bar
+  description: <a href="https://www.loom.com/i/54fd593a77c547a19dfc9da6ccc93469" title="Navigation/Menu
+    Bar" target="_blank">Navigation/Menu Bar Screenshot</a>
 - type: field_group
   name: banner
   label: banner
@@ -34,6 +37,8 @@ fields:
   - type: text
     name: bannerButtonText
     label: bannerButtonText
+  description: <a href="https://www.loom.com/i/0415789b7de54258be261cd273fb67c5" title="Banner"
+    target="_blank">Banner Screenshot</a>
 - type: field_group
   name: testimonialA
   label: testimonialA
