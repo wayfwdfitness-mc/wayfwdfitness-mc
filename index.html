@@ -1,13 +1,14 @@
 ---
 layout: default
 navBar:
-	navBarLink1: Benefits
-	navBarLink2: Pricing
-	navBarLink3: About
-	navBarLink4: Book a Call
-bannerTitle: Spring Forward in Your Health & Fitness Journey Today
-bannerSubtitle: Get custom nutrition and training plans to fast-track your transformation today, without struggling for time or energy.
-bannerButtonText: Unlock Special Offer
+ navBarLink1: "Benefits"
+ navBarLink2: "Pricing"
+ navBarLink3: "About"
+ navBarLink4: "Book a Call"
+banner:
+ bannerTitle: Spring Forward in Your Health & Fitness Journey Today
+ bannerSubtitle: Get custom nutrition and training plans to fast-track your transformation today, without struggling for time or energy.
+ bannerButtonText: Unlock Special Offer
 testimonialTextA: I love how he holds me accountable and pushes me to new levels, even when I doubt myself - Joe's always there to rally me on; he's my biggest supporter and cheerleader.
 testimonialAuthorA: Erica Guillory
 trainingProgramDetailsTitle: Training Program Details
@@ -78,17 +79,17 @@ testimonialAuthorB: Harsimran Saluja
 															href=#vbid-afd77-1kon5tyo datagit -link-type=ANCHOR
 															target=_self><span id=element-3a701650a1bb492
 																class="preview-element Link item-link magic-circle-holder text-element custom"
-																data-menu-name=PREVIEW_LINK>{{ page.navBarLink1 }}</span></a></li>
+																data-menu-name=PREVIEW_LINK>{{ page.navBar.navBarLink1 }}</span></a></li>
 													<li class=removable-parent><a class=removable-parent
 															href=#vbid-afd77-1zvxahtq data-link-type=ANCHOR
 															target=_self><span id=element-72003b9a0e24c63
 																class="preview-element Link item-link magic-circle-holder text-element custom"
-																data-menu-name=PREVIEW_LINK>{{ page.navBarLink2 }}<br></span></a></li>
+																data-menu-name=PREVIEW_LINK>{{ page.navBar.navBarLink2 }}<br></span></a></li>
 													<li class=removable-parent><a class=removable-parent
 															href=#vbid-afd77-og00mqdx data-link-type=ANCHOR
 															target=_self><span id=element-60402d3f81837e9
 																class="preview-element Link item-link magic-circle-holder text-element custom"
-																data-menu-name=PREVIEW_LINK>{{ page.navBarLink3 }}</span></a></li>
+																data-menu-name=PREVIEW_LINK>{{ page.navBar.navBarLink3 }}</span></a></li>
 													<li class=removable-parent id=nav-bookCall
 														style=border-radius:10px;padding-top:10px;padding-right:10px;padding-left:10px;background-color:#008037>
 														<a class=removable-parent
@@ -96,7 +97,7 @@ testimonialAuthorB: Harsimran Saluja
 															data-link-type=EXTERNAL target=_blank><span
 																id=element-731225264b6ae31 style=color:#fff!important
 																class="preview-element Link item-link magic-circle-holder text-element custom"
-																data-menu-name=PREVIEW_LINK>{{ page.navBarLink4 }}</span></a></li>
+																data-menu-name=PREVIEW_LINK>{{ page.navBar.navBarLink4 }}</span></a></li>
 													<div class=element-placeholder data-elementtype=LINK
 														style=display:none></div>
 												</ul>
@@ -181,7 +182,7 @@ testimonialAuthorB: Harsimran Saluja
 																					class="preview-title-holder removable-parent order-handle">
 																					<h1 id=vbid-afd77-lhiijzau
 																						class="preview-element preview-title magic-circle-holder inner-page text-element quick-text-style-menu allow-mobile-hide"
-																						data-menu-name=PREVIEW_TITLE>{{ page.bannerTitle }}
+																						data-menu-name=PREVIEW_TITLE>{{ page.banner.bannerTitle }}
 																					</h1>
 																				</div><br class=lower-line-break><br
 																					class=upper-line-break>
@@ -190,7 +191,7 @@ testimonialAuthorB: Harsimran Saluja
 																					<h3 id=vbid-afd77-jeh8mrod
 																						class="preview-element preview-subtitle magic-circle-holder text-element quick-text-style-menu allow-mobile-hide"
 																						data-menu-name=PREVIEW_SUBTITLE>
-																						{{ page.bannerSubtitle }}</h3>
+																						{{ page.banner.bannerSubtitle }}</h3>
 																				</div><br class=lower-line-break>
 																				<div class="preview-item-links order-handle removable-parent"
 																					style=display:inline-block><a
@@ -200,7 +201,7 @@ testimonialAuthorB: Harsimran Saluja
 																						target=_self><span
 																							id=vbid-afd77-qxyvfuqf
 																							class="preview-element Link item-link magic-circle-holder text-element"
-																							data-menu-name=PREVIEW_LINK>{{ page.bannerButtonText }}</span></a>
+																							data-menu-name=PREVIEW_LINK>{{ page.banner.bannerButtonText }}</span></a>
 																				</div>
 																			</div>
 																		</div>
