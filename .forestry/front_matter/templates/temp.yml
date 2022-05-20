@@ -1,31 +1,39 @@
 ---
-label: Homepage
+label: Temp
 hide_body: false
 fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: navBarLink1
-  label: navBarLink1
-- type: text
-  name: navBarLink2
-  label: navBarLink2
-- type: text
-  name: navBarLink3
-  label: navBarLink3
-- type: text
-  name: navBarLink4
-  label: navBarLink4
-- type: text
-  name: bannerTitle
-  label: bannerTitle
-- type: textarea
-  name: bannerSubtitle
-  label: bannerSubtitle
-- type: text
-  name: bannerButtonText
-  label: bannerButtonText
+- type: field_group
+  name: navBar
+  label: navBar
+  fields:
+  - type: text
+    name: navBarLink1
+    label: navBarLink1
+  - type: text
+    name: navBarLink2
+    label: navBarLink2
+  - type: text
+    name: navBarLink3
+    label: navBarLink3
+  - type: text
+    name: navBarLink4
+    label: navBarLink4
+- type: field_group
+  name: banner
+  label: banner
+  fields:
+  - type: text
+    name: bannerTitle
+    label: bannerTitle
+  - type: textarea
+    name: bannerSubtitle
+    label: bannerSubtitle
+  - type: text
+    name: bannerButtonText
+    label: bannerButtonText
 - type: textarea
   name: testimonialTextA
   label: testimonialTextA
