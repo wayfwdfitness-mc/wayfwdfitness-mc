@@ -4885,15 +4885,34 @@
 	data-app-version=1.5.8d data-caller=static data-ecommerce-dashboard=""
 	data-static-server=//builder.mackenocreative.com data-imos-server=https://imos006-dot-im--os.appspot.com> <div
 	id=xprs data-website-name="Joe Howard  copy" data-slug="" class=xprs-holder>
-	<!-- <div id="floater">
+	<div id="floater">
     <div id="floater-img">
+		<!-- TODO: Also change the images -->
 		<img src="https://ps.w.org/gazchaps-woocommerce-auto-category-product-thumbnails/assets/icon-256x256.png?rev=1848416">
 	</div>
-    <div id="floater-text">
+    <div id="floater-text"> 
+		<!-- TODO: Make the text change dynamically -->
+		<!-- Use a list of 10 first and 10 last names to permutate  -->
 		Samantha Howard from Houston, TX Signed Up for 4 Week Nutrition Program
 	</div>
+	<!-- TODO: Set a list of CTAs -->
 	<a>Call to Action</a>
-</div> -->
+</div>
+<script>
+	var counter = 1;
+	var timer = Math.floor((Math.random() * 14) + 7) * counter;
+	var myFunction = function() {
+		timer = Math.floor((Math.random() * 14) + 7) * counter;
+		var floater = document.getElementById("floater");
+		floater.style.animation = `swap 10s forwards`;
+		counter++;
+		setTimeout(() => {
+			floater.style.animation = "";
+		}, 10000);
+		setTimeout(myFunction, timer * 1000);
+	}
+	setTimeout(myFunction, timer * 1000);
+</script>
 <div class=main-page>
 		<div id=content>
 			<div id=vbid-afd77-feu2yxfx class="master container style-afd77-amahigy3 content stripes website-style"

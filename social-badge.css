@@ -12,7 +12,8 @@
     border-radius: 50px;
     height: 85px;
     background-color: white;
-    animation: swap 20s infinite;
+    /* animation: swap 5s forwards; */
+    opacity: 0;
 }
 #floater-img {
     float: left;
