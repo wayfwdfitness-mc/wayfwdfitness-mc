@@ -102,21 +102,57 @@ footer:
 ---
 <div id="floater">
     <div id="floater-img">
-		<!-- TODO: Also change the images -->
-		<img src="https://ps.w.org/gazchaps-woocommerce-auto-category-product-thumbnails/assets/icon-256x256.png?rev=1848416">
+		<img id="imgSrc">
 	</div>
-    <div id="floater-text"> 
-		<!-- TODO: Make the text change dynamically -->
-		<!-- Use a list of 10 first and 10 last names to permutate  -->
-		Samantha Howard from Houston, TX Signed Up for 4 Week Nutrition Program
-	</div>
-	<!-- TODO: Set a list of CTAs -->
-	<a>Call to Action</a>
+    <div id="floater-text"></div>
+	<a id="CTAButton"></a>
 </div>
 <script>
+	var firstNameList = ["Amanda", "Joe", "Julie", "Erica", "Frankie", "Ruby", "Aidan", "Ashley", "Kim", "Veronica", "Meghan", "Mae", "Presley", "Ivy"];
+	var lastNameList = ["Rodriguez", "Rosario", "Elias", "Guillory", "Frankie", "Mendoza", "Burn", "Carpenter", "Chase", "Campbell"];
+	var locationList = ["Katy", "Sugar Land", "Rosenberg", "Rosharon", "El Campo", "Wharton"];
+	var offerList = ["Bought 4 Week Nutrition Program", "Scheduled a Consultation", "Signed Up For Free Offer", "Left a Review"];
+	function BadgeReplacer() {
+		//floater values
+		//TODO: Images need to match? Or can it be random?
+		var imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
+		var firstName = firstNameList[Math.floor((Math.random() * firstNameList.length))];
+		var lastName = lastNameList[Math.floor((Math.random() * lastNameList.length))];
+		var fullName = firstName +" " + lastName;
+		var location = locationList[Math.floor((Math.random() * locationList.length))];
+		var offerText = offerList[Math.floor((Math.random() * offerList.length))];
+		floaterTextContent = `${fullName} from ${location} ${offerText}`
+		// button
+		switch (offerText) {
+			case "Bought 4 Week Nutrition Program":
+				var CTAButtonText = "Get 50% OFf";
+				var CTAButtonLink = "#vbid-15352549-gr2ixtpe"
+				break; 
+			case "Scheduled a Consultation":
+				var CTAButtonText = "Book a Call";
+				var CTAButtonLink = "https://calendly.com/joe-wayfwdfitness/30min"
+				break; 
+			case "Signed Up For Free Offer":
+				var CTAButtonText = "Claim Offer";
+				var CTAButtonLink = "#vbid-afd77-57dzvaqs";
+				break; 
+			case "Left a Review":
+				floaterTextContent = `Someone ${offerText} for Way Fwd Fitness, LLC`
+				var CTAButtonText = "Read Review";
+				var CTAButtonLink = "https://www.google.com/search?q=wayfwdfitness+llc+reviews&rlz=1C1RXQR_enUS949US949&sxsrf=ALiCzsbFbaxSnUyRX-gTbqVwKlzaRxOMFg%3A1655293742916&ei=LsepYsWZN_OiqtsP__iE4AU&ved=0ahUKEwjF6K3csa_4AhVzkWoFHX88AVwQ4dUDCA4&uact=5&oq=wayfwdfitness+llc+reviews&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BAgjECdKBAhBGABKBAhGGABQvARYhghg-QloAXABeACAAWiIAckCkgEDMy4xmAEAoAEByAEEwAEB&sclient=gws-wiz#lrd=0x8641836ae92abb29:0x84e75011de7a0181,1,,,"
+				break; 
+		}
+		
+		document.getElementById("imgSrc").src = imgSrc;
+		document.getElementById("floater-text").textContent =  floaterTextContent;
+		document.getElementById("CTAButton").textContent = CTAButtonText;
+		document.getElementById("CTAButton").href = CTAButtonLink;
+	}
+
 	var counter = 1;
 	var timer = Math.floor((Math.random() * 14) + 7) * counter;
 	var myFunction = function() {
+		BadgeReplacer();
 		timer = Math.floor((Math.random() * 14) + 7) * counter;
 		var floater = document.getElementById("floater");
 		floater.style.animation = `swap 10s forwards`;
