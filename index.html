@@ -104,7 +104,7 @@ footer:
     <div id="floater-img">
 		<img id="imgSrc">
 	</div>
-    <div id="floater-text"></div>
+    <div style="font-weight: bold" id="floater-text"></div>
 	<a id="CTAButton"></a>
 </div>
 <script>
@@ -114,32 +114,78 @@ footer:
 	var offerList = ["Bought 4 Week Nutrition Program", "Scheduled a Consultation", "Signed Up For Free Offer", "Left a Review"];
 	function BadgeReplacer() {
 		//floater values
-		//TODO: Images need to match? Or can it be random?
-		var imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
+		
 		var firstName = firstNameList[Math.floor((Math.random() * firstNameList.length))];
 		var lastName = lastNameList[Math.floor((Math.random() * lastNameList.length))];
 		var fullName = firstName +" " + lastName;
 		var location = locationList[Math.floor((Math.random() * locationList.length))];
 		var offerText = offerList[Math.floor((Math.random() * offerList.length))];
+		var imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
+		// switch (location) {
+		// 	case "Katy":
+		// 		imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
+		// 		break;
+		// 	case "Sugar Land":
+		// 		imgSrc = "./uploads/Social Badge Photos/Sugar Land.jpg"
+		// 		break;
+		// 	case "Rosenberg":
+		// 		imgSrc = "./uploads/Social Badge Photos/Rosenberg.jpg"
+		// 		break;
+		// 	case "Rosharon":
+		// 		imgSrc = "./uploads/Social Badge Photos/Rosharon.jpg"
+		// 		break;
+		// 	case "El Campo":
+		// 		imgSrc = "./uploads/Social Badge Photos/El Campo.jpg"
+		// 		break;
+		// 	case "Wharton":
+		// 		imgSrc = "./uploads/Social Badge Photos/Wharton.jpg"
+		// 		break;
+		// }
+
 		floaterTextContent = `${fullName} from ${location} ${offerText}`
 		// button
 		switch (offerText) {
 			case "Bought 4 Week Nutrition Program":
 				var CTAButtonText = "Get 50% OFf";
 				var CTAButtonLink = "#vbid-15352549-gr2ixtpe"
+				imgSrc = "./uploads/Social Badge Photos/4 Week.jpg"
 				break; 
 			case "Scheduled a Consultation":
 				var CTAButtonText = "Book a Call";
 				var CTAButtonLink = "https://calendly.com/joe-wayfwdfitness/30min"
+				switch (location) {
+					case "Katy":
+						imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
+						break;
+					case "Sugar Land":
+						imgSrc = "./uploads/Social Badge Photos/Sugar Land.jpg"
+						break;
+					case "Rosenberg":
+						imgSrc = "./uploads/Social Badge Photos/Rosenberg.jpg"
+						break;
+					case "Rosharon":
+						imgSrc = "./uploads/Social Badge Photos/Rosharon.jpg"
+						break;
+					case "El Campo":
+						imgSrc = "./uploads/Social Badge Photos/El Campo.jpg"
+						break;
+					case "Wharton":
+						imgSrc = "./uploads/Social Badge Photos/Wharton.jpg"
+						break;
+				}
+				document.getElementById("CTAButton").target = "_blank";
 				break; 
 			case "Signed Up For Free Offer":
 				var CTAButtonText = "Claim Offer";
 				var CTAButtonLink = "#vbid-afd77-57dzvaqs";
+				imgSrc = "./uploads/Social Badge Photos/Free Offer.jpg"
 				break; 
 			case "Left a Review":
 				floaterTextContent = `Someone ${offerText} for Way Fwd Fitness, LLC`
 				var CTAButtonText = "Read Review";
 				var CTAButtonLink = "https://www.google.com/search?q=wayfwdfitness+llc+reviews&rlz=1C1RXQR_enUS949US949&sxsrf=ALiCzsbFbaxSnUyRX-gTbqVwKlzaRxOMFg%3A1655293742916&ei=LsepYsWZN_OiqtsP__iE4AU&ved=0ahUKEwjF6K3csa_4AhVzkWoFHX88AVwQ4dUDCA4&uact=5&oq=wayfwdfitness+llc+reviews&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BAgjECdKBAhBGABKBAhGGABQvARYhghg-QloAXABeACAAWiIAckCkgEDMy4xmAEAoAEByAEEwAEB&sclient=gws-wiz#lrd=0x8641836ae92abb29:0x84e75011de7a0181,1,,,"
+				imgSrc = "./uploads/Social Badge Photos/Review.jpg"
+				document.getElementById("CTAButton").target = "_blank";
 				break; 
 		}
 		
