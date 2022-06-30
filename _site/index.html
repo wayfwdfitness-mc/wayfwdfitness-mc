@@ -4885,19 +4885,21 @@
 	data-app-version=1.5.8d data-caller=static data-ecommerce-dashboard=""
 	data-static-server=//builder.mackenocreative.com data-imos-server=https://imos006-dot-im--os.appspot.com> <div
 	id=xprs data-website-name="Joe Howard  copy" data-slug="" class=xprs-holder>
-	<!-- <div id="floater">
+	<div id="floater">
     <div id="floater-img">
 		<img id="imgSrc">
 	</div>
-    <div style="font-weight: bold" id="floater-text"></div>
+    <div id="floater-text"></div>
 	<a id="CTAButton"></a>
-</div> -->
+</div>
 <script>
 	var firstNameList = ["Amanda", "Joe", "Julie", "Erica", "Frankie", "Ruby", "Aidan", "Ashley", "Kim", "Veronica", "Meghan", "Mae", "Presley", "Ivy"];
 	var lastNameList = ["Rodriguez", "Rosario", "Elias", "Guillory", "Frankie", "Mendoza", "Burn", "Carpenter", "Chase", "Campbell"];
 	var locationList = ["Katy", "Sugar Land", "Rosenberg", "Rosharon", "El Campo", "Wharton"];
-	var offerList = ["Bought 4 Week Nutrition Program", "Scheduled a Consultation", "Signed Up For Free Offer", "Left a Review"];
+	var offerList = ["Bought 4 Week Nutrition Program", "Scheduled a Consultation", "Signed Up For Free 21 Day Fat Loss Challenge", "Left a Review"];
 	function BadgeReplacer() {
+		document.getElementById("CTAButton").removeAttribute("target");
+		document.getElementById("CTAButton").removeAttribute("data-link-type");
 		//floater values
 		
 		var firstName = firstNameList[Math.floor((Math.random() * firstNameList.length))];
@@ -4906,31 +4908,13 @@
 		var location = locationList[Math.floor((Math.random() * locationList.length))];
 		var offerText = offerList[Math.floor((Math.random() * offerList.length))];
 		var imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
-		// switch (location) {
-		// 	case "Katy":
-		// 		imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
-		// 		break;
-		// 	case "Sugar Land":
-		// 		imgSrc = "./uploads/Social Badge Photos/Sugar Land.jpg"
-		// 		break;
-		// 	case "Rosenberg":
-		// 		imgSrc = "./uploads/Social Badge Photos/Rosenberg.jpg"
-		// 		break;
-		// 	case "Rosharon":
-		// 		imgSrc = "./uploads/Social Badge Photos/Rosharon.jpg"
-		// 		break;
-		// 	case "El Campo":
-		// 		imgSrc = "./uploads/Social Badge Photos/El Campo.jpg"
-		// 		break;
-		// 	case "Wharton":
-		// 		imgSrc = "./uploads/Social Badge Photos/Wharton.jpg"
-		// 		break;
-		// }
 
 		floaterTextContent = `${fullName} from ${location} ${offerText}`
 		// button
 		switch (offerText) {
 			case "Bought 4 Week Nutrition Program":
+				document.getElementById("CTAButton").setAttribute("data-link-type", "ANCHOR");
+				document.getElementById("CTAButton").target = "_self";
 				var CTAButtonText = "Get 50% OFf";
 				var CTAButtonLink = "#vbid-15352549-gr2ixtpe"
 				imgSrc = "./uploads/Social Badge Photos/4 Week.jpg"
@@ -4960,7 +4944,9 @@
 				}
 				document.getElementById("CTAButton").target = "_blank";
 				break; 
-			case "Signed Up For Free Offer":
+			case "Signed Up For Free 21 Day Fat Loss Challenge":
+				document.getElementById("CTAButton").setAttribute("data-link-type", "ANCHOR");
+				document.getElementById("CTAButton").target = "_self";
 				var CTAButtonText = "Claim Offer";
 				var CTAButtonLink = "#vbid-afd77-57dzvaqs";
 				imgSrc = "./uploads/Social Badge Photos/Free Offer.jpg"
@@ -4978,22 +4964,23 @@
 		document.getElementById("floater-text").textContent =  floaterTextContent;
 		document.getElementById("CTAButton").textContent = CTAButtonText;
 		document.getElementById("CTAButton").href = CTAButtonLink;
+		console.log(CTAButtonText);
 	}
 
-	// var counter = 1;
-	// var timer = Math.floor((Math.random() * 14) + 7) * counter;
-	// var myFunction = function() {
-	// 	BadgeReplacer();
-	// 	timer = Math.floor((Math.random() * 14) + 7) * counter;
-	// 	var floater = document.getElementById("floater");
-	// 	floater.style.animation = `swap 10s forwards`;
-	// 	counter++;
-	// 	setTimeout(() => {
-	// 		floater.style.animation = "";
-	// 	}, 10000);
-	// 	setTimeout(myFunction, timer * 1000);
-	// }
-	// setTimeout(myFunction, timer * 1000);
+	var counter = 1;
+	var timer = Math.floor((Math.random() * 29) + 20) * counter;
+	var myFunction = function() {
+		BadgeReplacer();
+		timer = Math.floor((Math.random() * 29) + 20) * counter;
+		var floater = document.getElementById("floater");
+		floater.style.animation = `swap 10s forwards`;
+		counter++;
+		setTimeout(() => {
+			floater.style.animation = "";
+		}, 10000);
+		setTimeout(myFunction, timer * 1000);
+	}
+	setTimeout(myFunction, timer * 1000);
 </script>
 <div class=main-page>
 		<div id=content>
@@ -5566,7 +5553,7 @@ As hormone and micronutrient levels balance, positive physical and emotional res
 	</div>
 	</div>
 	</div>
-	<div id=vbid-15352549-gr2ixtpe class="master item-box gallery-box style-15352549-1i6hnza7 button-effects btn_hover4"
+	<div id=vbid-15352549-gr2ixtpe class="master item-box gallery-box style-15352549-1i6hnza7 button-effects btn_hover4" style="scroll-margin-top: 150px;"
 		data-holder-type=gallery data-holder-type=" gallery" data-child-type=STYLE data-styleid=style-15352549-1i6hnza7
 		data-preview-styleid=style-15352549-1i6hnza7 data-preset-type-id=TEXT_BLOCK>
 		<div id=no-image class="stripe-background load-high-res"></div>
@@ -5759,7 +5746,7 @@ xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","cate
 		</div>
 	</div>
 	</div>
-	<div id=vbid-afd77-57dzvaqs class="master item-box gallery-box style-afd77-c9yaaqjf button-effects btn_hover3"
+	<div id=vbid-afd77-57dzvaqs class="master item-box gallery-box style-afd77-c9yaaqjf button-effects btn_hover3" style="scroll-margin-top: 150px;"
 		data-holder-type=gallery data-holder-type=" gallery" data-child-type=NATIVE_ORDER
 		data-styleid=style-afd77-c9yaaqjf data-preview-styleid=style-afd77-c9yaaqjf data-preset-type-id=FEATURES>
 		<div id=no-image class="stripe-background load-high-res"></div>
