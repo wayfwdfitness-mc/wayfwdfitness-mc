@@ -108,6 +108,9 @@ footer:
 	<a id="CTAButton"></a>
 </div>
 <script>
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const preview = urlParams.get("preview");
 	var firstNameList = ["Amanda", "Joe", "Julie", "Erica", "Frankie", "Ruby", "Aidan", "Ashley", "Kim", "Veronica", "Meghan", "Mae", "Presley", "Ivy"];
 	var lastNameList = ["Rodriguez", "Rosario", "Elias", "Guillory", "Frankie", "Mendoza", "Burn", "Carpenter", "Chase", "Campbell"];
 	var locationList = ["Katy", "Sugar Land", "Rosenberg", "Rosharon", "El Campo", "Wharton"];
@@ -183,19 +186,21 @@ footer:
 	}
 
 	var counter = 1;
-	var timer = Math.floor((Math.random() * 29) + 20) * counter;
-	var myFunction = function() {
-		BadgeReplacer();
-		timer = Math.floor((Math.random() * 29) + 20) * counter;
-		var floater = document.getElementById("floater");
-		floater.style.animation = `swap 10s forwards`;
-		counter++;
-		setTimeout(() => {
-			floater.style.animation = "";
-		}, 10000);
+	var timer = Math.floor((Math.random() * 1) + 20) * counter;
+	if (preview) {
+		var myFunction = function() {
+			BadgeReplacer();
+			timer = Math.floor((Math.random() * 1) + 20) * counter;
+			var floater = document.getElementById("floater");
+			floater.style.animation = `swap 10s forwards`;
+			counter++;
+			setTimeout(() => {
+				floater.style.animation = "";
+			}, 10000);
+			setTimeout(myFunction, timer * 1000);
+		}
 		setTimeout(myFunction, timer * 1000);
 	}
-	setTimeout(myFunction, timer * 1000);
 </script>
 <div class=main-page>
 		<div id=content>
