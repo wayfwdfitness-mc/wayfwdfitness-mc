@@ -111,6 +111,8 @@ footer:
 	const queryString = window.location.search;
 	const urlParams = new URLSearchParams(queryString);
 	const preview = urlParams.get("preview");
+	var width = screen.width;
+	console.log(width); //TODO: Add  if screen width is below 600 SQ2X
 	var firstNameList = ["Amanda", "Joe", "Julie", "Erica", "Frankie", "Ruby", "Aidan", "Ashley", "Kim", "Veronica", "Meghan", "Mae", "Presley", "Ivy"];
 	var lastNameList = ["Rodriguez", "Rosario", "Elias", "Guillory", "Frankie", "Mendoza", "Burn", "Carpenter", "Chase", "Campbell"];
 	var locationList = ["Katy", "Sugar Land", "Rosenberg", "Rosharon", "El Campo", "Wharton"];
@@ -135,7 +137,12 @@ footer:
 				document.getElementById("CTAButton").target = "_self";
 				var CTAButtonText = "Get 50% OFf";
 				var CTAButtonLink = "#vbid-15352549-gr2ixtpe"
-				imgSrc = "./uploads/Social Badge Photos/4 Week.jpg"
+				if (width < 600) {
+					imgSrc = "./uploads/Social Badge Photos/SQ2x-4 Week.jpg"
+				}
+				else {
+					imgSrc = "./uploads/Social Badge Photos/4 Week.jpg"
+				}
 				break; 
 			case "Scheduled a Consultation":
 				var CTAButtonText = "Book a Call";
