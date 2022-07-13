@@ -4922,45 +4922,67 @@
 				document.getElementById("CTAButton").target = "_self";
 				var CTAButtonText = "Get 50% OFf";
 				var CTAButtonLink = "#vbid-15352549-gr2ixtpe"
-				imgSrc = "./uploads/Social Badge Photos/4 Week.jpg"
+				if (width < 600) {
+					imgSrc = "./uploads/Social Badge Photos/SQ2x-4 Week.jpg"
+				}
+				else {
+					imgSrc = "./uploads/Social Badge Photos/4 Week.jpg"
+				}
 				break; 
 			case "Scheduled a Consultation":
 				var CTAButtonText = "Book a Call";
 				var CTAButtonLink = "https://calendly.com/joe-wayfwdfitness/30min"
-				switch (location) {
-					case "Katy":
-						imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
-						break;
-					case "Sugar Land":
-						imgSrc = "./uploads/Social Badge Photos/Sugar Land.jpg"
-						break;
-					case "Rosenberg":
-						imgSrc = "./uploads/Social Badge Photos/Rosenberg.jpg"
-						break;
-					case "Rosharon":
-						imgSrc = "./uploads/Social Badge Photos/Rosharon.jpg"
-						break;
-					case "El Campo":
-						imgSrc = "./uploads/Social Badge Photos/El Campo.jpg"
-						break;
-					case "Wharton":
-						imgSrc = "./uploads/Social Badge Photos/Wharton.jpg"
-						break;
+				if (width < 600) {
+					imgSrc = "./uploads/Social Badge Photos/SQ2x-Consult.jpg"
 				}
+				else {
+					switch (location) {
+						case "Katy":
+							imgSrc = "./uploads/Social Badge Photos/Katy.jpg"
+							break;
+						case "Sugar Land":
+							imgSrc = "./uploads/Social Badge Photos/Sugar Land.jpg"
+							break;
+						case "Rosenberg":
+							imgSrc = "./uploads/Social Badge Photos/Rosenberg.jpg"
+							break;
+						case "Rosharon":
+							imgSrc = "./uploads/Social Badge Photos/Rosharon.jpg"
+							break;
+						case "El Campo":
+							imgSrc = "./uploads/Social Badge Photos/El Campo.jpg"
+							break;
+						case "Wharton":
+							imgSrc = "./uploads/Social Badge Photos/Wharton.jpg"
+							break;
+					}
+				}
+
 				document.getElementById("CTAButton").target = "_blank";
+				
 				break; 
 			case "Signed Up For Free 21 Day Fat Loss Challenge":
 				document.getElementById("CTAButton").setAttribute("data-link-type", "ANCHOR");
 				document.getElementById("CTAButton").target = "_self";
 				var CTAButtonText = "Claim Offer";
 				var CTAButtonLink = "#vbid-afd77-57dzvaqs";
-				imgSrc = "./uploads/Social Badge Photos/Free Offer.jpg"
+				if (width < 600) {
+					imgSrc = "./uploads/Social Badge Photos/SQ2x-Free Offer.jpg"
+				}
+				else {
+					imgSrc = "./uploads/Social Badge Photos/Free Offer.jpg"
+				}
 				break; 
 			case "Left a Review":
 				floaterTextContent = `Someone ${offerText} for Way Fwd Fitness, LLC`
 				var CTAButtonText = "Read Review";
 				var CTAButtonLink = "https://www.google.com/search?q=wayfwdfitness+llc+reviews&rlz=1C1RXQR_enUS949US949&sxsrf=ALiCzsbFbaxSnUyRX-gTbqVwKlzaRxOMFg%3A1655293742916&ei=LsepYsWZN_OiqtsP__iE4AU&ved=0ahUKEwjF6K3csa_4AhVzkWoFHX88AVwQ4dUDCA4&uact=5&oq=wayfwdfitness+llc+reviews&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BAgjECdKBAhBGABKBAhGGABQvARYhghg-QloAXABeACAAWiIAckCkgEDMy4xmAEAoAEByAEEwAEB&sclient=gws-wiz#lrd=0x8641836ae92abb29:0x84e75011de7a0181,1,,,"
-				imgSrc = "./uploads/Social Badge Photos/Review.jpg"
+				if (width < 600) {
+					imgSrc = "./uploads/Social Badge Photos/SQ2x-Review.jpg"
+				}
+				else {
+					imgSrc = "./uploads/Social Badge Photos/Review.jpg"
+				}
 				document.getElementById("CTAButton").target = "_blank";
 				break; 
 		}
