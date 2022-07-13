@@ -210,11 +210,11 @@ footer:
 	}
 
 	var counter = 1;
-	var timer = Math.floor((Math.random() * 47) + 20) * counter;
+	var timer = Math.floor((Math.random() * 1) + 20) * counter;
 	if (preview) {
 		var myFunction = function() {
 			BadgeReplacer();
-			timer = Math.floor((Math.random() * 47) + 20) * counter;
+			timer = Math.floor((Math.random() * 1) + 20) * counter;
 			var floater = document.getElementById("floater");
 			floater.style.animation = `swap 10s forwards`;
 			counter++;
