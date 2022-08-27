@@ -4878,6 +4878,20 @@
 			a.appendChild(r);
 		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
+	<script>
+		(function (s, e, n, d, er) {
+			s['Sender'] = er;
+			s[er] = s[er] || function () {
+			(s[er].q = s[er].q || []).push(arguments)
+			}, s[er].l = 1 * new Date();
+			var a = e.createElement(n),
+				m = e.getElementsByTagName(n)[0];
+			a.async = 1;
+			a.src = d;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+		sender('4d08695da62593')
+	</script>
 </head>
 
 <body class="fast-animated-bg fixed-bg" data-ecommerce-solution=DISABLED data-root-id=vbid-afd77-feu2yxfx
@@ -4891,6 +4905,7 @@
 	</div>
     <div id="floater-text"></div>
 	<a id="CTAButton"></a>
+	<a id="CTAButton2" class="popUpFormButton">Sign Up</a>
 </div>
 <script>
 	const queryString = window.location.search;
@@ -4901,10 +4916,12 @@
 	var firstNameList = ["Amanda", "Joe", "Julie", "Erica", "Frankie", "Ruby", "Aidan", "Ashley", "Kim", "Veronica", "Meghan", "Mae", "Presley", "Ivy"];
 	var lastNameList = ["Rodriguez", "Rosario", "Elias", "Guillory", "Frankie", "Mendoza", "Burn", "Carpenter", "Chase", "Campbell"];
 	var locationList = ["Katy", "Sugar Land", "Rosenberg", "Rosharon", "El Campo", "Wharton"];
-	var offerList = ["Bought 4 Week Nutrition Program", "Scheduled a Consultation", "Signed Up For Free 21 Day Fat Loss Challenge", "Left a Review"];
+	var offerList = ["Bought 4 Week Nutrition Program", "Scheduled a Consultation", "Signed Up For Free 21 Day Fat Loss Challenge", "Left a Review", "Sign Up for Newsletter"];
 	function BadgeReplacer() {
+		document.getElementById("CTAButton2").style.display = "none"
 		document.getElementById("CTAButton").removeAttribute("target");
 		document.getElementById("CTAButton").removeAttribute("data-link-type");
+		document.getElementById("CTAButton").classList.remove("popUpFormButton");
 		//floater values
 		
 		var firstName = firstNameList[Math.floor((Math.random() * firstNameList.length))];
@@ -4985,6 +5002,19 @@
 				}
 				document.getElementById("CTAButton").target = "_blank";
 				break; 
+			case "Sign Up for Newsletter":
+				floaterTextContent = `Sign Up for the WayFwd Newsletter for Tips and Tricks to Reach Your Goals`
+				document.getElementById("CTAButton2").style.display = "inline-block"
+				document.getElementById("CTAButton").classList.add("popUpFormButton");
+				var CTAButtonText = "Sign Up";
+				var CTAButtonLink = "#"
+				if (width < 600) {
+					imgSrc = "./uploads/Social Badge Photos/SQ2x-Review.jpg"
+				}
+				else {
+					imgSrc = "./uploads/Social Badge Photos/Review.jpg"
+				}
+				break; 
 		}
 		
 		document.getElementById("imgSrc").src = imgSrc;
@@ -4995,11 +5025,16 @@
 	}
 
 	var counter = 1;
-	var timer = Math.floor((Math.random() * 47) + 20) * counter;
+	var timeOnCalc = (Math.random() * 47) + 20;
+	var shorterTimeFlag = false;
+	if(shorterTimeFlag) {
+		timeOnCalc = (Math.random() * 1) + 11;
+	}
+	var timer = Math.floor(timeOnCalc) * counter;
 	// if (preview) {
 		var myFunction = function() {
 			BadgeReplacer();
-			timer = Math.floor((Math.random() * 47) + 20) * counter;
+			timer = Math.floor(timeOnCalc) * counter;
 			var floater = document.getElementById("floater");
 			floater.style.animation = `swap 10s forwards`;
 			counter++;
@@ -5832,37 +5867,36 @@ xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","cate
 															<div class=draggable-div-holder></div>
 															<div class="preview-content-holder shrinker-content"><br
 																	class=upper-line-break>
-																<div
-																	class="preview-title-holder removable-parent order-handle">
-																	<h2 id=vbid-afd77-qfnnilln
-																		class="preview-element preview-title magic-circle-holder inner-page text-element quick-text-style-menu allow-mobile-hide"
-																		data-menu-name=PREVIEW_TITLE>Need more time? Try this free offer.</h2>
-																</div><br class=lower-line-break><br
-																	class=upper-line-break>
-																<div
-																	class="preview-body-holder removable-parent order-handle">
-																	<div id=vbid-afd77-jgrgyl6v
-																		class="preview-element preview-body magic-circle-holder text-element quick-text-style-menu allow-mobile-hide"
-																		data-menu-name=PREVIEW_BODY>
+																<div class="preview-title-holder removable-parent order-handle">
+																	<h2 id=vbid-afd77-qfnnilln class="preview-element preview-title magic-circle-holder inner-page text-element quick-text-style-menu allow-mobile-hide" data-menu-name=PREVIEW_TITLE>Need more time? Try this free offer.</h2>
+																</div>
+																<br class=lower-line-break>
+																<br class=upper-line-break>
+																<div class="preview-body-holder removable-parent order-handle">
+																	<div id=vbid-afd77-jgrgyl6v class="preview-element preview-body magic-circle-holder text-element quick-text-style-menu allow-mobile-hide" data-menu-name=PREVIEW_BODY>
 																		<p>Take advantage of our 21 day fat loss challenge, lose 3-5 pounds using our proven Metabolic Reset program. You won't believe how simple and sustainable healthy weight loss can be!</p>
 																	</div>
 																</div><br class=lower-line-break>
 																<div class="preview-form order-handle">
-																	<div class=element-placeholder
-																		data-elementtype=FIELD style=display:none></div>
+																	<div class=element-placeholder data-elementtype=FIELD style=display:none></div>
 																</div>
 																<div class="preview-item-links order-handle">
-																	<div class=preview-links-wrapper><a
-																			class=removable-parent
-																			href="https://calendly.com/joe-wayfwdfitness/30min"
-																			data-link-type=EXTERNAL target=_blank><span
-																				id=vbid-afd77-9pjraff5
-																				class="preview-element Link item-link magic-circle-holder text-element"
-																				data-menu-name=PREVIEW_LINK>Click Here to Book</span></a>
-																		<div class=element-placeholder
-																			data-elementtype=LINK style=display:none>
+																	<div class=preview-links-wrapper>
+																		<a class=removable-parent href="https://calendly.com/joe-wayfwdfitness/30min" data-link-type=EXTERNAL target=_blank>
+																			<span id=vbid-afd77-9pjraff5 class="preview-element Link item-link magic-circle-holder text-element" data-menu-name=PREVIEW_LINK>Click Here to Book</span>
+																		</a>
+																		<div class=element-placeholder data-elementtype=LINK style=display:none>
 																		</div>
 																	</div>
+																</div>
+																<div class="preview-subtitle-holder removable-parent order-handle">	
+																	<a href="#" onclick="return false;" data-link-type="EXTERNAL" target="_self" class="popUpFormButton">
+																		<h3 class="preview-element preview-subtitle magic-circle-holder text-element quick-text-style-menu allow-mobile-hide" data-menu-name="PREVIEW_SUBTITLE" data-orig-font-size="20"> 
+																			<strong>
+																			Click here to learn more
+																			</strong>
+																		</h3>
+																	</a>
 																</div>
 															</div>
 														</div>
